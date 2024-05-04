@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Form</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <!-- ...........THE OPEN BUTTON..............  -->
+  <button class="open" onclick="document.getElementById('modal').style.display = 'block'" ondblclick="document.getElementById('modal').style.display = 'none'"><b>Login</b></button>
+  <div id="modal" class="modal">
+    <!-- ...........THE MODAL CONTENTS..............  -->  
+      <form action="" class="modalContent">
+    <!-- ...........THE OPEN BUTTON..............  -->
+        <span class="close" onclick="document.getElementById('modal').style.display = 'none'">&times; <b>close</b> </span>
+        <div class="inputs">
+          <label for="username">Username:</label>
+          <input type="text" name="username" placeholder="Enter your Username" required maxlength="20" title="Username cannot be more than 20 characters">
+        </div>
+  
+        <div class="inputs">
+          <label for="email">Email;:</label>
+          <input type="email" name="email" placeholder="Enter your correct email address" required maxlength="35" title="Please Enter correct email address">
+        </div>
+  
+        <div class="inputs">
+          <input type="checkbox" name="remember" checked>Remember me
+        </div>
+  
+        <div class="inputs">
+          <input class="login" type="button" value="Login"></input>
+        </div>
+        <span class="forgot">Forgot <a href="#">Password?</a></span>
+        <!-- ................THE CANCEL BUTTON............  -->
+        <div class="cancelbtn">
+          <button type="button" onclick="document.getElementById('modal').style.display = 'none'">Cancel</button>
+        </div>
+      </form>
+    </div>
+</body>
+</html>
